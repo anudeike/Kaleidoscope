@@ -16,10 +16,11 @@ arguments = {
 
 # get the download
 try:
-    response.download(arguments)
+    paths = response.download(arguments)
 except FileNotFoundError:
     print("file not found")
 
+print(paths[0][search_query])
 
 
 #handle file not found
