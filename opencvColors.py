@@ -2,6 +2,8 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 from google_images_download import google_images_download # for webscrapping
+from mpl_toolkits import mplot3d
+
 
 # hyperparameters
 blur_amt = 75 # for some reason only works in multiples of 5 that don't end in zero
@@ -53,6 +55,7 @@ def createHistogramFromSamplePictures(paths, blurAmount):
         # color values is a dictionary
         most_popular_color = {}
 
+
         for i, col in enumerate(color):
             histogram = cv2.calcHist([blur], [i], None, [256], [0, 256])
 
@@ -74,10 +77,37 @@ def createHistogramFromSamplePictures(paths, blurAmount):
 
     pass
 
+def createPixelValueGraph(path):
+    """
+    :param path: path to file
+    :return: displays a 3d graph that assumes
+    """
+
+    img = cv2.imread(path[0]) # get the image
+
+    # get the height, width and channels of the img
+    height, width, nchannels = img.shape
+    print(height, width, nchannels)
+
+    # double for loop to be able to get the entire 3d representation
+    b = [] # for blue
+    g = [] # for green
+    r = [] # for red
+
+    # for x in range(width-1):
+    #     for y in range(height-1):
+    #         b.append(img[x, y][0])
+    #         g.append(img[x, y][1])
+    #         r.append(img[x, y][2])
+
+
+    pass
+
 # ===== FUNCTION DRIVER CODE ============#
 
 #file_paths = getImagesFromGoogle(query, 1, format)
-createHistogramFromSamplePictures(['downloads/sunrise/10.Haleakala_Sunrise_8.jpg'], 5)
+#createHistogramFromSamplePictures(['downloads/sunrise/10.Haleakala_Sunrise_8.jpg'], 5)
+createPixelValueGraph(['downloads/sunrise/10.Haleakala_Sunrise_8.jpg'])
 
 # createHistogramFromSamplePictures(file_paths, 75)
 # # this is the sample driver code
