@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from google_images_download import google_images_download # for webscrapping
 from mpl_toolkits.mplot3d import Axes3D
+from skimage import io
 import itertools
 
 
@@ -41,7 +42,7 @@ def createHistogramFromSamplePictures(paths, blurAmount):
     # paths contain all the absolute paths to the images that the above code retrieved
     # define the kernel amount
     kernel_size = (blurAmount, blurAmount)
-    color = ('r', 'g', 'b')
+    color = ('b', 'g', 'r')
 
     # create a dictionary to hold most info about photos
     photos = []
@@ -61,8 +62,8 @@ def createHistogramFromSamplePictures(paths, blurAmount):
         blur = cv2.GaussianBlur(img, kernel_size, 0)
 
         #create the plot figure
-        plt.subplot(211) #top
-        plt.imshow(blur)
+        # plt.subplot(211) #top
+        # plt.imshow(blur)
 
         # color values is a dictionary
         most_popular_color = {}
@@ -76,13 +77,13 @@ def createHistogramFromSamplePictures(paths, blurAmount):
             max_index = np.where(histogram == max_val)
             most_popular_color[col] = max_index[0][0]
 
-            #map the hex value
-            plt.subplot(212)
-            plt.plot(histogram, color = col)
-            plt.xlim([0, 256])
-            plt.xlabel("color value")
-            plt.ylabel("frequencies")
-            plt.title("")
+            # #map the hex value
+            # plt.subplot(212)
+            # plt.plot(histogram, color = col)
+            # plt.xlim([0, 256])
+            # plt.xlabel("color value")
+            # plt.ylabel("frequencies")
+            # plt.title("")
 
         photo_info["main_color"] = most_popular_color # set the most popular color to this
 
@@ -90,10 +91,10 @@ def createHistogramFromSamplePictures(paths, blurAmount):
         # append the photo info to the photos array
         photos.append(photo_info)
 
-        plt.show() # show it just for now
+        #plt.show() # show it just for now
 
-    print(photos)
-    pass
+    # return the photos array
+    return photos
 
 def createPixelValueGraph(path):
 
@@ -136,13 +137,39 @@ def createPixelValueGraph(path):
     plt.show()
     pass
 
+def createColorPaletteFromPictures(images_data, search_term):
+    print(" createColorPaletteFunction ")
+
+    palette = []
+    for cell in images_data:
+        c = list(cell["main_color"].values())
+        c.reverse()
+        palette.append(c)
+    pal = np.asarray(palette)
+    print("This is pal: ", pal)
+    # palette
+    indices = np.random.randint(0, len(palette), size=pal.shape)
+
+    # show to the canvas
+    io.imshow(pal[indices])
+
+    # save the figure to a file
+    plt.savefig("color_palette_test/palette_searchTerm-" + search_term + ".png")
+
+    plt.show()
+
+    pass
 # ===== FUNCTION DRIVER CODE ============#
 
 # get files from google
-#file_paths = getImagesFromGoogle(query, 1, format)
+file_paths = getImagesFromGoogle(query, 5, format)
 
 # create the histograms from the pictures
-createHistogramFromSamplePictures(['small_test_photos/beach_tropical.png'], 5)
+picture_data = createHistogramFromSamplePictures(file_paths, 5)
+
+# create the color Palette
+createColorPaletteFromPictures(images_data=picture_data, search_term=query)
+
 # createPixelValueGraph(['downloads/sunset/beach.png'])
 
 # createHistogramFromSamplePictures(file_paths, 75)

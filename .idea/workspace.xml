@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ffcd1e-9830-4b3a-9926-8c3062bf80d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo_random_array_of_colors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencvColors.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencvColors.py" afterDir="false" />
     </list>
@@ -27,25 +28,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="jpg" value="22" />
+          <entry key="jpg" value="24" />
           <entry key="png" value="5" />
-          <entry key="py" value="7" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="27" />
-          <entry key="Python" value="7" />
+          <entry key="Image" value="29" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8213" />
+          <entry key="py" value="9836" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="8213" />
+          <entry key="Python" value="9836" />
         </counts>
       </usages-collector>
     </session>
@@ -55,16 +56,39 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/opencvColors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="87">
+              <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#2409#3344#0" />
-                <marker date="1567389349678" expanded="true" signature="1063:1150" ph="..." />
-                <marker date="1567389349678" expanded="true" signature="1209:1214" ph="..." />
+                <marker date="1567405269605" expanded="true" signature="1086:1173" ph="..." />
+                <marker date="1567405269605" expanded="true" signature="1232:1237" ph="..." />
+                <marker date="1567405269605" expanded="true" signature="4365:4375" ph="..." />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo_random_array_of_colors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/downloads/sunrise/3.7VGD6HYYOVFNRLAQ3P2KQXZ2QQ.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/downloads/sunrise/1.Hazy_Crazy_Sunrise.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,12 +132,14 @@
         <option value="$USER_HOME$/Downloads/create_subplots.py" />
         <option value="$PROJECT_DIR$/plot3d.py" />
         <option value="$PROJECT_DIR$/gaussian_blur_open_cv.py" />
+        <option value="$PROJECT_DIR$/demo_random_array_of_colors.py" />
         <option value="$PROJECT_DIR$/opencvColors.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -130,21 +156,6 @@
             <path>
               <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
               <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
-              <item name="histograms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
-              <item name="pictures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
-              <item name="small_test_photos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="download_google_images" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="demo_random_array_of_colors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="color_histogram" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,7 +219,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/download_google_images.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo_random_array_of_colors.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,17 +294,17 @@
     <list>
       <item itemvalue="Python.opencvColors" />
       <item itemvalue="Python.gaussian_blur_open_cv" />
-      <item itemvalue="Python.download_google_images" />
       <item itemvalue="Python.create_subplots" />
       <item itemvalue="Python.plot3d" />
+      <item itemvalue="Python.demo_random_array_of_colors" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.opencvColors" />
+        <item itemvalue="Python.demo_random_array_of_colors" />
         <item itemvalue="Python.gaussian_blur_open_cv" />
         <item itemvalue="Python.plot3d" />
         <item itemvalue="Python.create_subplots" />
-        <item itemvalue="Python.download_google_images" />
       </list>
     </recent_temporary>
   </component>
@@ -311,15 +322,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33150986" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,7 +344,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14805058" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -428,9 +439,6 @@
     <entry file="file://$PROJECT_DIR$/downloads/sunrise/7.inline_image_preview.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloads/sunrise/1.Hazy_Crazy_Sunrise.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/downloads/sunrise/8.220px-Little_Gasparilla_sunrise.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -447,15 +455,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/downloads/sunrise/3.7VGD6HYYOVFNRLAQ3P2KQXZ2QQ.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloads/sunrise/1.Hazy_Crazy_Sunrise.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_random_array_of_colors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/skimage/io/_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/opencvColors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="87">
+          <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#2409#3344#0" />
-            <marker date="1567389349678" expanded="true" signature="1063:1150" ph="..." />
-            <marker date="1567389349678" expanded="true" signature="1209:1214" ph="..." />
+            <marker date="1567405269605" expanded="true" signature="1086:1173" ph="..." />
+            <marker date="1567405269605" expanded="true" signature="1232:1237" ph="..." />
+            <marker date="1567405269605" expanded="true" signature="4365:4375" ph="..." />
           </folding>
         </state>
       </provider>
