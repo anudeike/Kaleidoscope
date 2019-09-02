@@ -41,7 +41,7 @@ def createHistogramFromSamplePictures(paths, blurAmount):
     # paths contain all the absolute paths to the images that the above code retrieved
     # define the kernel amount
     kernel_size = (blurAmount, blurAmount)
-    color = ('b', 'g', 'r')
+    color = ('r', 'g', 'b')
 
     # create a dictionary to hold most info about photos
     photos = []
@@ -86,11 +86,13 @@ def createHistogramFromSamplePictures(paths, blurAmount):
 
         photo_info["main_color"] = most_popular_color # set the most popular color to this
 
-        # append the photo info to the photos array
 
+        # append the photo info to the photos array
+        photos.append(photo_info)
 
         plt.show() # show it just for now
 
+    print(photos)
     pass
 
 def createPixelValueGraph(path):
