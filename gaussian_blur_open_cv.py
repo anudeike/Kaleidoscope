@@ -1,15 +1,32 @@
 import cv2
 import numpy as np
+import matplotlib as mpl
+from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import pyplot as plt
+import itertools
 
-img = cv2.imread('pictures/barcelona-morning-sky.jpg')
+np.random.seed(89)
 
-kernel_size = (45,45)
-blur = cv2.GaussianBlur(img,kernel_size,0)
+img = cv2.imread('downloads/sunrise/8.220px-Little_Gasparilla_sunrise.jpg')
 
-plt.subplot(121),plt.imshow(img),plt.title('Original')
-plt.xticks([]), plt.yticks([])
+# Make this bigger to generate a dense grid
+N = 3
 
-plt.subplot(122),plt.imshow(blur),plt.title('Blurred')
-plt.xticks([]), plt.yticks([])
-plt.show()
+# Create some random data
+volume = np.random.rand(N, N, N) # 3 last dimensions to simulate the rgb
+
+print(img)
+
+r, g, b = [], [], []
+
+for i in range(img.shape[0]):
+    for j in range(img.shape[1]):
+        for k in range(img.shape[2]):
+            if k == 0:
+                b.append(img[i][j][k])
+            if k == 1:
+                g.append(img[i][j][k])
+            if k == 2:
+                r.append(img[i][j][k])
+
+print(b)

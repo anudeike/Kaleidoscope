@@ -2,7 +2,8 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 from google_images_download import google_images_download # for webscrapping
-from mpl_toolkits import mplot3d
+from mpl_toolkits.mplot3d import Axes3D
+import itertools
 
 
 # hyperparameters
@@ -41,8 +42,19 @@ def createHistogramFromSamplePictures(paths, blurAmount):
     # define the kernel amount
     kernel_size = (blurAmount, blurAmount)
     color = ('b', 'g', 'r')
+
+    # create a dictionary to hold most info about photos
+    photos = []
+
     # main forloop
     for path in paths:
+        # dictionary to hold paths and most popular color
+        photo_info = {
+            "path": path,
+            "main_color": {
+
+            }
+        }
 
         # create an img object and add the blur
         img = cv2.imread(path)
@@ -55,7 +67,7 @@ def createHistogramFromSamplePictures(paths, blurAmount):
         # color values is a dictionary
         most_popular_color = {}
 
-
+        # for each color
         for i, col in enumerate(color):
             histogram = cv2.calcHist([blur], [i], None, [256], [0, 256])
 
@@ -72,18 +84,24 @@ def createHistogramFromSamplePictures(paths, blurAmount):
             plt.ylabel("frequencies")
             plt.title("")
 
-        print(most_popular_color)
+        photo_info["main_color"] = most_popular_color # set the most popular color to this
+
+        # append the photo info to the photos array
+
+
         plt.show() # show it just for now
 
     pass
 
 def createPixelValueGraph(path):
+
     """
     :param path: path to file
     :return: displays a 3d graph that assumes
     """
 
     img = cv2.imread(path[0]) # get the image
+    img = cv2.GaussianBlur(img, (5,5), 15)
 
     # get the height, width and channels of the img
     height, width, nchannels = img.shape
@@ -94,20 +112,36 @@ def createPixelValueGraph(path):
     g = [] # for green
     r = [] # for red
 
-    # for x in range(width-1):
-    #     for y in range(height-1):
-    #         b.append(img[x, y][0])
-    #         g.append(img[x, y][1])
-    #         r.append(img[x, y][2])
+    # print(img.size)
+    print(img)
 
+    r, g, b = [], [], []
 
+    for i in range(img.shape[0]):
+        for j in range(img.shape[1]):
+            for k in range(img.shape[2]):
+                if k == 0:
+                    b.append(img[i][j][k])
+                if k == 1:
+                    g.append(img[i][j][k])
+                if k == 2:
+                    r.append(img[i][j][k])
+
+    fig = plt.figure()
+    ax = Axes3D(fig)
+
+    ax.scatter(r, g, b, c=b)
+    plt.show()
     pass
 
 # ===== FUNCTION DRIVER CODE ============#
 
+# get files from google
 #file_paths = getImagesFromGoogle(query, 1, format)
-#createHistogramFromSamplePictures(['downloads/sunrise/10.Haleakala_Sunrise_8.jpg'], 5)
-createPixelValueGraph(['downloads/sunrise/10.Haleakala_Sunrise_8.jpg'])
+
+# create the histograms from the pictures
+createHistogramFromSamplePictures(['small_test_photos/beach_tropical.png'], 5)
+# createPixelValueGraph(['downloads/sunset/beach.png'])
 
 # createHistogramFromSamplePictures(file_paths, 75)
 # # this is the sample driver code
