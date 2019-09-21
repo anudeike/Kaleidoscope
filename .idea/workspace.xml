@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ffcd1e-9830-4b3a-9926-8c3062bf80d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo_random_array_of_colors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/click_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/click_tutorial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencvColors.py" beforeDir="false" afterPath="$PROJECT_DIR$/opencvColors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kaleidoscope-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kaleidoscope-app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,37 +21,46 @@
     <session id="-363199639">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="html" value="2" />
           <entry key="jpg" value="24" />
-          <entry key="png" value="5" />
-          <entry key="py" value="10" />
+          <entry key="png" value="8" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="29" />
-          <entry key="Python" value="10" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="32" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="9836" />
+          <entry key="dummy" value="26" />
+          <entry key="html" value="196" />
+          <entry key="py" value="11272" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="9836" />
+          <entry key="HTML" value="196" />
+          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="Python" value="11272" />
         </counts>
       </usages-collector>
     </session>
@@ -54,63 +68,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/opencvColors.py">
+        <entry file="file://$PROJECT_DIR$/src/kaleidoscope-app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#2409#3344#0" />
-                <marker date="1567405269605" expanded="true" signature="1086:1173" ph="..." />
-                <marker date="1567405269605" expanded="true" signature="1232:1237" ph="..." />
-                <marker date="1567405269605" expanded="true" signature="4365:4375" ph="..." />
+                <element signature="e#0#40#0" expanded="true" />
+                <marker date="1569096466686" expanded="true" signature="130:135" ph="..." />
+                <marker date="1569096466686" expanded="true" signature="205:248" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_random_array_of_colors.py">
+        <entry file="file://$PROJECT_DIR$/src/testScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1569096466656" expanded="true" signature="59:64" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/downloads/sunrise/3.7VGD6HYYOVFNRLAQ3P2KQXZ2QQ.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/downloads/sunrise/1.Hazy_Crazy_Sunrise.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/downloads/party/1.organiser-soiree.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gaussian_blur_open_cv.py">
+        <entry file="file://$PROJECT_DIR$/src/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="23" column="26" selection-start-line="19" selection-end-line="29" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/downloads/sunrise/8.220px-Little_Gasparilla_sunrise.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -118,6 +116,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -133,13 +132,19 @@
         <option value="$PROJECT_DIR$/plot3d.py" />
         <option value="$PROJECT_DIR$/gaussian_blur_open_cv.py" />
         <option value="$PROJECT_DIR$/demo_random_array_of_colors.py" />
+        <option value="$PROJECT_DIR$/isp_prob.py" />
+        <option value="$PROJECT_DIR$/click_tutorial.py" />
         <option value="$PROJECT_DIR$/opencvColors.py" />
+        <option value="$PROJECT_DIR$/src/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/templates/about.html" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/kaleidoscope-app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="36" />
+    <option name="y" value="11" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -157,6 +162,22 @@
               <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
               <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
+              <item name="downloads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="color_histogram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="color_histogram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -164,6 +185,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$USER_HOME$/go/src/github.com/anudeike/Kaleidoscope" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -185,8 +208,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.opencvColors">
-    <configuration name="create_subplots" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.kaleidoscope-app">
+    <configuration name="click_tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="color_histogram" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,11 +217,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/create_subplots.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/click_tutorial.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,7 +251,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gaussian_blur_open_cv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="isp_prob" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="color_histogram" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,7 +263,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gaussian_blur_open_cv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/isp_prob.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kaleidoscope-app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="color_histogram" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/kaleidoscope-app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,41 +314,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot3d" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="color_histogram" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot3d.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.opencvColors" />
-      <item itemvalue="Python.gaussian_blur_open_cv" />
-      <item itemvalue="Python.create_subplots" />
-      <item itemvalue="Python.plot3d" />
       <item itemvalue="Python.demo_random_array_of_colors" />
+      <item itemvalue="Python.isp_prob" />
+      <item itemvalue="Python.click_tutorial" />
+      <item itemvalue="Python.kaleidoscope-app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.kaleidoscope-app" />
+        <item itemvalue="Python.click_tutorial" />
+        <item itemvalue="Python.isp_prob" />
         <item itemvalue="Python.opencvColors" />
         <item itemvalue="Python.demo_random_array_of_colors" />
-        <item itemvalue="Python.gaussian_blur_open_cv" />
-        <item itemvalue="Python.plot3d" />
-        <item itemvalue="Python.create_subplots" />
       </list>
     </recent_temporary>
   </component>
@@ -325,18 +348,18 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14014752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32502708" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -442,15 +465,52 @@
     <entry file="file://$PROJECT_DIR$/downloads/sunrise/8.220px-Little_Gasparilla_sunrise.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloads/party/1.organiser-soiree.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gaussian_blur_open_cv.py">
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/skimage/io/_io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="23" column="26" selection-start-line="19" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="197">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/The-Margin-Problem/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isp_prob.py" />
+    <entry file="file://$PROJECT_DIR$/click_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/opencvColors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2567">
+          <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1568579348669" expanded="true" signature="1065:1152" ph="..." />
+            <marker date="1568579348669" expanded="true" signature="1211:1216" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color_palette_test/palette_searchTerm-dojoblurAmt-35.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color_palette_test/palette_searchTerm-sunrise.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color_palette_test/palette.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_random_array_of_colors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -461,33 +521,51 @@
     <entry file="file://$PROJECT_DIR$/downloads/sunrise/1.Hazy_Crazy_Sunrise.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_random_array_of_colors.py">
+    <entry file="file://$PROJECT_DIR$/downloads/party/1.organiser-soiree.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gaussian_blur_open_cv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="306">
+          <caret line="23" column="26" selection-start-line="19" selection-end-line="29" selection-end-column="38" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/skimage/io/_io.py">
+    <entry file="file://$PROJECT_DIR$/src/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opencvColors.py">
+    <entry file="file://$PROJECT_DIR$/src/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#2409#3344#0" />
-            <marker date="1567405269605" expanded="true" signature="1086:1173" ph="..." />
-            <marker date="1567405269605" expanded="true" signature="1232:1237" ph="..." />
-            <marker date="1567405269605" expanded="true" signature="4365:4375" ph="..." />
+            <marker date="1569096466656" expanded="true" signature="59:64" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kaleidoscope-app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <marker date="1569096466686" expanded="true" signature="130:135" ph="..." />
+            <marker date="1569096466686" expanded="true" signature="205:248" ph="..." />
           </folding>
         </state>
       </provider>

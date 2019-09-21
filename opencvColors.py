@@ -4,13 +4,12 @@ import numpy as np
 from google_images_download import google_images_download # for webscrapping
 from mpl_toolkits.mplot3d import Axes3D
 from skimage import io
-import itertools
 
 
 # hyperparameters
-blur_amt = 75 # for some reason only works in multiples of 5 that don't end in zero
+blur_amt = 35 # for some reason only works in multiples of 5 that don't end in zero
 result_count = 1 # amount of results we want
-query = "sunrise"
+query = "sea"
 format = "jpg" # will use jpg because they are smaller
 
 # create function to retrieve the images
@@ -111,9 +110,6 @@ def createPixelValueGraph(path):
     print(height, width, nchannels)
 
     # double for loop to be able to get the entire 3d representation
-    b = [] # for blue
-    g = [] # for green
-    r = [] # for red
 
     # print(img.size)
     print(img)
@@ -137,7 +133,7 @@ def createPixelValueGraph(path):
     plt.show()
     pass
 
-def createColorPaletteFromPictures(images_data, search_term):
+def createColorPaletteFromPictures(images_data, search_term, blur_amt):
     print(" createColorPaletteFunction ")
 
     palette = []
@@ -149,12 +145,12 @@ def createColorPaletteFromPictures(images_data, search_term):
     print("This is pal: ", pal)
     # palette
     indices = np.random.randint(0, len(palette), size=pal.shape)
-
+    indices = np.sort(indices)
     # show to the canvas
     io.imshow(pal[indices])
 
     # save the figure to a file
-    plt.savefig("color_palette_test/palette_searchTerm-" + search_term + ".png")
+    plt.savefig("color_palette_test/palette_searchTerm-" + search_term + "blurAmt-" + str(blur_amt) + ".png")
 
     plt.show()
 
@@ -165,10 +161,10 @@ def createColorPaletteFromPictures(images_data, search_term):
 file_paths = getImagesFromGoogle(query, 5, format)
 
 # create the histograms from the pictures
-picture_data = createHistogramFromSamplePictures(file_paths, 5)
+picture_data = createHistogramFromSamplePictures(file_paths, blur_amt)
 
 # create the color Palette
-createColorPaletteFromPictures(images_data=picture_data, search_term=query)
+createColorPaletteFromPictures(images_data=picture_data, search_term=query, blur_amt=blur_amt)
 
 # createPixelValueGraph(['downloads/sunset/beach.png'])
 
