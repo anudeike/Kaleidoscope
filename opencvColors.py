@@ -4,6 +4,7 @@ import numpy as np
 from google_images_download import google_images_download # for webscrapping
 from mpl_toolkits.mplot3d import Axes3D
 from skimage import io
+import pprint
 
 
 # hyperparameters
@@ -39,7 +40,6 @@ def getImagesFromGoogle(search_term, result_amt, pictureFormat, showURLs = True)
 
 def createHistogramFromSamplePictures(paths, blurAmount):
     # paths contain all the absolute paths to the images that the above code retrieved
-    # define the kernel amount
     kernel_size = (blurAmount, blurAmount)
     color = ('b', 'g', 'r')
 
@@ -59,10 +59,6 @@ def createHistogramFromSamplePictures(paths, blurAmount):
         # create an img object and add the blur
         img = cv2.imread(path)
         blur = cv2.GaussianBlur(img, kernel_size, 0)
-
-        #create the plot figure
-        # plt.subplot(211) #top
-        # plt.imshow(blur)
 
         # color values is a dictionary
         most_popular_color = {}
@@ -112,7 +108,7 @@ def createPixelValueGraph(path):
     # double for loop to be able to get the entire 3d representation
 
     # print(img.size)
-    print(img)
+    #print(img)
 
     r, g, b = [], [], []
 
@@ -134,15 +130,15 @@ def createPixelValueGraph(path):
     pass
 
 def createColorPaletteFromPictures(images_data, search_term, blur_amt):
-    print(" createColorPaletteFunction ")
 
     palette = []
     for cell in images_data:
         c = list(cell["main_color"].values())
-        c.reverse()
+        c.reverse() # gives r g b
         palette.append(c)
+
     pal = np.asarray(palette)
-    print("This is pal: ", pal)
+    print("This is pal: ", pal) # this is the palette that should be returned into the function
     # palette
     indices = np.random.randint(0, len(palette), size=pal.shape)
     indices = np.sort(indices)
@@ -162,35 +158,14 @@ file_paths = getImagesFromGoogle(query, 5, format)
 
 # create the histograms from the pictures
 picture_data = createHistogramFromSamplePictures(file_paths, blur_amt)
+# # create the color Palette
+# createColorPaletteFromPictures(images_data=picture_data, search_term=query, blur_amt=blur_amt)
 
-# create the color Palette
-createColorPaletteFromPictures(images_data=picture_data, search_term=query, blur_amt=blur_amt)
+# this is the main function that should encapsulate the code
+def main(query, amount_of_results, amount_of_blur=35):
+    paths = getImagesFromGoogle(query, amount_of_results, format)
+    picture_data = createHistogramFromSamplePictures(paths, amount_of_blur)
+    print("main_color: " + str(picture_data))
 
-# createPixelValueGraph(['downloads/sunset/beach.png'])
-
-# createHistogramFromSamplePictures(file_paths, 75)
-# # this is the sample driver code
-# file = "pictures/barcelona-morning-sky.jpg"
-# img = cv2.imread(file)
-#
-#
-# #blur the image using gaussaian blur
-# kernel_size = (blur_amt, blur_amt)
-# blur = cv2.GaussianBlur(img,kernel_size,0)
-# color = ('b','g','r')
-# plt.figure()
-#
-# #for each column and index in colors tuple
-# for i, col in enumerate(color):
-#     histogram = cv2.calcHist([blur], [i], None, [256], [0, 256])
-#     plt.plot(histogram, color = col)
-#     plt.xlim([0,256])
-#     plt.xlabel("color value")
-#     plt.ylabel("number of occurences")
-#     plt.title(file[9:] + "-blur" + str(blur_amt))
-#
-# #save the file in the histogram folder
-# save_path = "histograms/" + file[9:] + "-blur" + str(blur_amt) + "_hist.png"
-# plt.savefig(save_path)
-# plt.show()
+    pass
 
