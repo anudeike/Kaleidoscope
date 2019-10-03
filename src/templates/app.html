@@ -8,9 +8,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href = "src/templates/app" />
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light">
         <div id="left-aligned">
             <a class="navbar-brand" href="#"> Kaleidoscope </a>
         </div>
@@ -20,5 +21,81 @@
             <button type="button" class="btn btn-primary btn-lg">Generate</button>
         </div>
     </nav>
+
+    <div class="main-container">
+        <div class="jumbotron vertical-center">
+            <div class="container" style="justify-content: center;">
+
+            </div>
+            <div class="container" style="justify-content: center;">
+                <span><h1 class="display-1 jumbotron-title"> Kaleidoscope </h1></span>
+                <span><h5 class="headline jumbotron-title"> Generate accurate color palettes </h5></span>
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter a keyword: e.g 'sea' ">
+                        <h6 class="form-text text-white elevation-1">This'll determine what your color palette will look like!.</h6>
+                    </div>
+                </form>
+            </div>
+            <div class="container" style="justify-content: center;">
+
+            </div>
+        </div>
+
+    </div>
+
+
 </body>
+<style>
+    body {
+        animation: 10000ms ease-in-out infinite color-change;
+    }
+
+    @keyframes color-change {
+      0% {
+        background-color: teal;
+      }
+      20% {
+        background-color: gold;
+      }
+      40% {
+        background-color: indianred;
+      }
+      60% {
+        background-color: violet;
+      }
+      80% {
+        background-color: green;
+      }
+      100% {
+        background-color: teal;
+      }
+    }
+
+    .jumbotron {
+        height: 100%;
+        background: transparent;
+    }
+
+    .vertical-center {
+        min-height: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .jumbotron-title {
+        color: whitesmoke;
+        text-shadow: 0px 0px 4px rgba(150,150,150,0.99)
+    }
+
+    nav{
+        background-color: transparent;
+    }
+
+</style>
 </html>
